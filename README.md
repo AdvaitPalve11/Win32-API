@@ -8,7 +8,12 @@ This repository contains practice code and experiments while learning the Win32 
 
 ## Build
 
-Compile with GCC:
+Compile with GCC (output will match source filename):
+```bash
+g++ <filename>.cpp -o output/<filename>.exe -lgdi32 -luser32
+```
+
+Example:
 ```bash
 g++ main.cpp -o output/main.exe -lgdi32 -luser32
 ```
