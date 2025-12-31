@@ -1,0 +1,35 @@
+# Compiled executables
+*.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+
+# Compiled libraries
+*.lib
+*.a
+*.dll
+*.so
+*.dylib
+
+# VS Code
+.vscode/
+
+# Output directory
+output/
+
+# Debug files
+*.pdb
+*.ilk
+
+# Compiler-generated files
+*.d
+*.gch
+*.pch
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
