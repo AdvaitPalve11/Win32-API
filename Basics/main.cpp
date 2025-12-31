@@ -33,6 +33,9 @@ int WINAPI WinMain(HINSTANCE hIntstance , HINSTANCE hPrev, LPSTR args,int ncmd){
 HWND hWnd = CreateWindow("Basic Window" , "First Window" , WS_OVERLAPPEDWINDOW,100,100,800,600,NULL,NULL,hIntstance,NULL);
 
 //Show The Window
+ShowWindow(hWnd,ncmd);
+
+//Message Loop
 MSG msg;
 while (GetMessage(&msg,NULL,0,0))
 {
