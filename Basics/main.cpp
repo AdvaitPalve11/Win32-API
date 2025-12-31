@@ -1,3 +1,5 @@
+#define UNICODE
+#define _UNICODE
 #include<windows.h>
 
 LRESULT CALLBACK WndProc(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam){
@@ -9,7 +11,7 @@ LRESULT CALLBACK WndProc(HWND hWnd,UINT uMsg,WPARAM wParam,LPARAM lParam){
     
     case WM_KEYDOWN:
       if(wParam == 'A')
-        MessageBox(hWnd,"You Pressed A","Key",MB_OKCANCEL);
+        MessageBox(hWnd,L"You Pressed A",L"Key",MB_OKCANCEL);
         return 0;
 
   }
@@ -30,7 +32,7 @@ int WINAPI WinMain(HINSTANCE hIntstance , HINSTANCE hPrev, LPSTR args,int ncmd){
    RegisterClassW(&wc);
 
    //Create the Window
-HWND hWnd = CreateWindow("Basic Window" , "First Window" , WS_OVERLAPPEDWINDOW,100,100,800,600,NULL,NULL,hIntstance,NULL);
+HWND hWnd = CreateWindow(L"Basic Window" , L"First Window" , WS_OVERLAPPEDWINDOW,100,100,800,600,NULL,NULL,hIntstance,NULL);
 
 //Show The Window
 ShowWindow(hWnd,ncmd);
